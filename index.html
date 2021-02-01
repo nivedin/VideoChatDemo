@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Video Call</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.1.2/tailwind.min.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <main>
+    <nav>
+      <div class="navContainer">
+        <a href="index.html" class="navLogo">VideoChat-Web</a>
+        <div class="navImg">
+        </div>
+      </div>
+    </nav>
+
+    <div class="mainContainer">
+      <div class="leftForm">
+        <div class="formContainer">
+          <div class="userName">
+            <label class="text-gray-700 font-bold py-2" for="">Username</label>
+            <input id="usernameContainer"
+              class="text-gray-700 shadow border rounded border-gray-300 focus:outline-none focus:shadow-outline py-1 px-3 mb-3"
+              type="text" placeholder="Username" required>
+          </div>
+          <div class="passwordContainer">
+            <label class="text-gray-700 font-bold py-2" for="">Password</label>
+            <input
+              class="text-gray-700 shadow border rounded border-gray-300 mb-3 py-1 px-3 focus:outline-none focus:shadow-outline"
+              type="password" placeholder="Password" required>
+          </div>
+          <div class="btnGitContainer flex my-4 block m-auto ">
+            <button id="submit_btn" class="signinBtn text-black font-bold rounded py-2 px-10"
+              onclick="window.location.href='./pages/avc.html'">
+              Sign In
+            </button>
+
+          </div>
+        </div>
+      </div>
+      <div class="rightIllu">
+        <div class="illuContainer">
+          <img src="./images/undraw_business_chat_ldig.svg" alt="rightIllu">
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

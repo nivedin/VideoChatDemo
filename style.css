@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* body {
+    animation: bgColor 5s ease infinite alternate;
+}
+
+@keyframes bgColor {
+    0% {
+        background: #7579e7;
+    }
+
+    50% {
+        background: #9ab3f5;
+    }
+
+    100% {
+        background: #a3d8f4;
+    }
+} */
+
+main {
+    height: 100vh;
+}
+
+nav {
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navContainer {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navLogo {
+    text-decoration: none;
+    color: #204EB2;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.navImg {
+    transform: translateY(10px);
+    height: 50px;
+    width: 130px;
+}
+
+.navImg img {
+    height: 100%;
+    width: 100%;
+}
+
+.mainContainer {
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 5%;
+}
+
+.leftForm {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer {
+    background: #F59600;
+    padding: 6% 8%;
+    border-radius: 8px;
+    width: 60%;
+}
+
+.formContainer .userName {
+    margin-bottom: 15px;
+}
+
+.formContainer label {
+    color: white;
+
+}
+
+.formContainer input {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.btnGitContainer {
+    justify-content: space-between;
+}
+
+.signinBtn {
+    background: rgb(24, 24, 24);
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+.signinBtn:hover {
+    opacity: 0.9;
+}
+
+.illuContainer {
+    height: 100%;
+    width: 100%;
+}
+
+.rightIllu {
+    width: 50%;
+}
+
+.illuContainer img {
+    height: 85%;
+    width: 85%;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10vh;
+    background: transparent;
+}
+
+.gitHubLink svg {
+    height: 44px;
+    width: 44px;
+    margin: 0 auto;
+    transition: all 0.3s linear;
+}
+
+.gitHubLink svg:hover {
+    color: #ffffff;
+
+}
+
+#disable_camera,
+#disconnect_call,
+#mute_mic {
+    outline: none;
+}
+
+@media all and (max-device-width: 723px) {
+    body {
+        animation: bgColor 5s ease infinite alternate;
+    }
+
+    @keyframes bgColor {
+        0% {
+            background: #757F9A;
+        }
+
+        50% {
+            background: #9da3ad;
+        }
+
+        100% {
+            background: #D7DDE8;
+        }
+    }
+
+    .illuContainer {
+        display: none;
+    }
+
+    .leftForm {
+        min-height: 100vh;
+        min-width: 100%;
+    }
+
+    .formContainer {
+        background: #ffffff;
+        height: 20rem;
+        width: 100%;
+    }
+
+    .mobileView {
+        flex-direction: column;
+    }
+
+    .mobileView div {
+        height: 50%;
+        width: 100%;
+    }
+
+    .formContainer label {
+        color: rgb(61, 61, 61);
+
+    }
+
+    .signinBtn {
+        border: 2px solid rgb(255, 255, 255);
+        background: rgb(0, 0, 0);
+        color: white;
+        transition: all 0.3s ease-in-out;
+        border-radius: 10px;
+    }
+}
